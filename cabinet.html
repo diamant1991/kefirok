@@ -217,36 +217,39 @@
       <div class="row">
          <ol class="breadcrumb">
             <li><a href="#">Главная</a></li>
-            <li><a href="#">Вход, регистрация</a></li>
-            <li class="active">Регистрация почти закончена</li>
+            <li class="active">Личный кабинет</li>
          </ol>
-         <h3 class="main-h3">Добавить адрес доставки</h3>
-         <div class="cabinet clearfix">
+         <h3 class="main-h3">Личный кабинет</h3>
+         <div class="cabinet personal-cab clearfix">
             <div class="col-md-7">
                <div class="row">
-                  <div class="enter-block">
-                     <div class="input-block reg-input cab-input clearfix">
-                        <div class="input-title">Город <span>*</span></div>
-                        <div class="select-choice">
-                           <a href="javascript:void(0);" class="slct"></a>
-                           <ul class="drop">
-                              <li class="active">Владивосток</li>
-                              <li>Город 2</li>
-                              <li>Город 3</li>
-                              <li>Город 4</li>
-                           </ul>
-                           <input type="hidden" id="select">
+                  <div class="profile">
+                     <div class="avatar">
+                        <div class="proj-img">
+                           <img src="images/avatar.png" height="124" width="80" alt="">
+                        </div>
+                        <div class="exit">
+                           <a href="#" class="exit-link">
+                              <span>Выход</span>
+                           </a>
                         </div>
                      </div>
-                     <div class="input-block reg-input cab-input clearfix">
-                        <div class="input-title">Адрес <span>*</span></div>
-                        <textarea></textarea>
-                     </div>
-                     <div class="input-block reg-input cab-input clearfix">
-                        <div class="input-title"></div>
-                        <div class="sub-btn-cab">
-                           <a href="#" class="add-adress-btn"><span><img src="images/pkus.png" height="10" width="10" alt=""></span>добавить адрес</a>
-                           <input type="submit" value="отмена" class="cancel">
+                     <div class="prof-stat">
+                        <div class="prof-block">
+                           <div class="name">Мамышев Сергей Владимирович</div>
+                           <div class="prof-email">Эл.почта: ivanovdmitr@yandex.ru</div>
+                        </div>
+                        <div class="prof-block">
+                           <p>Тип профиля: юридическое лицо</p>
+                        </div>
+                        <div class="prof-block">
+                           <p>Название компании: ООО “Рога и Копыта”</p>
+                           <p>Телефон: +7 999-254-2542</p>
+                           <p>Факс:</p>
+                        </div>
+                        <div class="prof-btn">
+                           <a href="#" class="edit-prof">редактировать</a>
+                           <a href="#" class="change-pass">сменить пароль</a>
                         </div>
                      </div>
                   </div>
@@ -270,9 +273,123 @@
                            <a href="#" class="cancel-icon"><img src="images/close.png" height="16" width="16" alt=""></a>
                         </div>
                      </div>
+                     <a href="#" class="add-adress-btn mrg-15"><span><img src="images/pkus.png" height="10" width="10" alt=""></span>добавить адрес</a>
                   </div>
                </div>
             </div>
+         </div>
+
+         <div class="your-order">
+            <h3 class="main-h3">Ваши заказы</h3>
+            <table class="table-order">
+               <thead>
+                  <tr>
+                     <td>Номер заказа</td>
+                     <td>Дата</td>
+                     <td>Наименования в заказе</td>
+                     <td>Сумма</td>
+                     <td>Статус заказа</td>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <a href="#" class="number-link">0025</a>
+                     </td>
+                     <td>10.05.2015</td>
+                     <td>
+                        <ul>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">1</span> шт.</span>
+                           </li>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">2</span> шт.</span>
+                           </li>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">1</span> шт.</span>
+                           </li>
+                        </ul>
+                     </td>
+                     <td>29 000 руб.</td>
+                     <td class="status">Оплачен</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a href="#" class="number-link">0025</a>
+                     </td>
+                     <td>10.05.2015</td>
+                     <td>
+                        <ul>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">1</span> шт.</span>
+                           </li>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">2</span> шт.</span>
+                           </li>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">1</span> шт.</span>
+                           </li>
+                        </ul>
+                     </td>
+                     <td>29 000 руб.</td>
+                     <td class="status">Новый заказ</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a href="#" class="number-link">0025</a>
+                     </td>
+                     <td>10.05.2015</td>
+                     <td>
+                        <ul>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">1</span> шт.</span>
+                           </li>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">2</span> шт.</span>
+                           </li>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">1</span> шт.</span>
+                           </li>
+                        </ul>
+                     </td>
+                     <td>29 000 руб.</td>
+                     <td class="status">Ожидает оплаты</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a href="#" class="number-link">0025</a>
+                     </td>
+                     <td>10.05.2015</td>
+                     <td>
+                        <ul>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">1</span> шт.</span>
+                           </li>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">2</span> шт.</span>
+                           </li>
+                           <li>
+                              <a href="#">Водонагреватель Electrolux Smartfix 2.0 3.5 S</a>
+                              <span>х  <span class="bold">1</span> шт.</span>
+                           </li>
+                        </ul>
+                     </td>
+                     <td>29 000 руб.</td>
+                     <td class="status">Выполнен</td>
+                  </tr>
+               </tbody>
+            </table>
          </div>
       </div>
    </div>
