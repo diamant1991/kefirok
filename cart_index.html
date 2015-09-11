@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>info zakaz</title>
+  <title>cart_index</title>
   <!-- Bootstrap -->
   <!--  <link href="css/bootstrap.min.css" rel="stylesheet"> -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -217,116 +217,211 @@
       <div class="row">
          <ol class="breadcrumb">
             <li><a href="#">Главная</a></li>
-            <li><a href="#">Личный кабинет</a></li>
-            <li class="active">Информация о заказе № 2145245</li>
+            <li class="active">Ваша корзина</li>
          </ol>
+
+         <div>
+            <h3 class="main-h3">Ваша корзина</h3>
+         </div>
       </div>
    </div>
 
-   <div class="info-zakaz clearfix">
+   <div class="cart clearfix">
       <div class="container">
          <div class="row">
-            <div class="col-md-7">
+            <div class="col-xs-12">
                <div class="row">
-                  <div class="zakaz-block">
-                     <header>
-                        <h2>Информация о заказе # 2145245</h2>
-                        <h4>Заказ #2145245 от 17 июля 2015 / 13:22</h4>
-                     </header>
-                     <div class="data-prof">
-                        <h4>Данные покупателя</h4>
-                        <table class="data-table">
-                           <tr>
-                              <td>ФИО:</td>
-                              <td>Мамышев Сергей Владимирович</td>
-                           </tr>
-                           <tr>
-                              <td>Компания:</td>
-                              <td>ООО “Рога и Копыта”</td>
-                           </tr>
-                           <tr>
-                              <td>Телефон:</td>
-                              <td>+7 (423) 295-58-65</td>
-                           </tr>
-                           <tr>
-                              <td>Факс:</td>
-                              <td></td>
-                           </tr>
-                           <tr>
-                              <td>Электронная почта:</td>
-                              <td>primer@mail.ru</td>
-                           </tr>
-                           <tr>
-                              <td>Тип доставки:</td>
-                              <td>Доставка по городу</td>
-                           </tr>
-                           <tr>
-                              <td>Адрес:</td>
-                              <td>Владивосток <br>ул. Новоивановская 45, офис 300</td>
-                           </tr>
-                           <tr>
-                              <td>Способ оплаты:</td>
-                              <td>Наличными при получении</td>
-                           </tr>
-                        </table>
-                     </div>
-                  </div>
-
-                  <div class="status-order">
-                     <header>
-                        <h3>Статус заказа</h3>
-                     </header>
-                     <div class="content-status">
-                        <div class="top-stat clearfix">
-                           <span>Текущий статус</span>
-                           <span>Дата</span>
+                  <div class="steps clearfix">
+                     <div class="col-sm-4">
+                        <div class="row">
+                           <div class="step-block active">
+                              <div class="title">Ваша корзина</div>
+                              <div class="step-number">
+                                 <div class="line"></div>
+                                 <div class="numb-block">
+                                    <div class="numb">1</div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                        <div class="bot-stat clearfix">
-                           <span>Ожидает оплаты</span>
-                           <span>15.07.2015</span>
+                     </div>
+                     <div class="col-sm-4">
+                        <div class="row">
+                           <div class="step-block">
+                              <div class="title">Оформление заказа</div>
+                              <div class="step-number">
+                                 <div class="line"></div>
+                                 <div class="numb-block">
+                                    <div class="numb">2</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-4">
+                        <div class="row">
+                           <div class="step-block">
+                              <div class="title">Заказ оформлен</div>
+                              <div class="step-number">
+                                 <div class="line"></div>
+                                 <div class="numb-block">
+                                    <div class="numb">3</div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-
-            <div class="col-md-5">
-               <div class="row">
-                  <div class="right-status">
-                     <div class="part-order">
-                        <h4>Состав заказа: <span>(4 товара)</span></h4>
-                        <ol class="numb-list">
-                           <li>
+            <div class="clear"></div>
+            <div class="cart-items clearfix">
+               <div class="col-md-7">
+                  <div class="row">
+                     <div class="cart-item-block">
+                        <div class="cart-item-tovar">
+                           <div class="cart-item-img">
+                              <img src="images/cart-item.jpg" height="125" width="82" alt="">
+                           </div>
+                           <div class="cart-item-text">
                               <div class="name">Водонагреватель Electrolux EWH 10 Genie O</div>
-                              <div class="price"><span class="total-pr">4 970</span> <span class="rub">c</span></div>
-                           </li>
-                           <li>
-                              <div class="name">Водонагреватель Electrolux EWH 10 Genie O <span>x 2</span></div>
-                              <div class="price"><span class="total-pr">4 970</span> <span class="rub">c</span></div>
-                           </li>
-                        </ol>
-                     </div>
-
-                     <div class="in-total">
-                        <h4>Итого:</h4>
-                        <div class="in-total-block clearfix">
-                           <span>Стоимость:</span>
-                           <span>58 950 Р.</span>
+                              <div class="cart-item-info">
+                                 <p>Артикул: <span>1158240</span></p>
+                                 <p>Производитель: <span>Electrolux (Испания)</span></p>
+                              </div>
+                           </div>
                         </div>
-                        <div class="in-total-block clearfix">
-                           <span>Доставка до точки выдачи:</span>
-                           <span>Бесплатно</span>
-                        </div>
-                        <div class="all-payment clearfix">
-                           <span class="text">Всего к оплате:</span>
-                           <p><span class="price">58 950</span> <span class="rub">c</span></p>
+                        <div class="cart-item-price">
+                           <div class="title">Цена</div>
+                           <div class="total-price"><span class="price">9 940</span> <span class="rub">c</span></div>
+                           <div class="total-price-info">
+                              4 970 <span class="rub">c</span> x 2
+                           </div>
+                           <div class="amount clearfix">
+                              <a class="minus">-</a>
+                              <input type="text" value="2">
+                              <a class="plus">+</a>
+                           </div>
+                           <div class="delete">
+                              <a href="#">удалить</a>
+                           </div>
                         </div>
                      </div>
+                     <div class="cart-item-block">
+                        <div class="cart-item-tovar">
+                           <div class="cart-item-img">
+                              <img src="images/cart-item.jpg" height="125" width="82" alt="">
+                           </div>
+                           <div class="cart-item-text">
+                              <div class="name">Водонагреватель Electrolux EWH 10 Genie O</div>
+                              <div class="cart-item-info">
+                                 <p>Артикул: <span>1158240</span></p>
+                                 <p>Производитель: <span>Electrolux (Испания)</span></p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="cart-item-price">
+                           <div class="title">Цена</div>
+                           <div class="cart-prev-price">
+                              <span class="red">14 998</span>
+                              <span class="rub">c</span>
+                           </div>
+                           <div class="total-price"><span class="price">9 940</span> <span class="rub">c</span></div>
+                           <div class="amount clearfix">
+                              <a class="minus">-</a>
+                              <input type="text" value="2">
+                              <a class="plus">+</a>
+                           </div>
+                           <div class="delete">
+                              <a href="#">удалить</a>
+                           </div>
+                        </div>
+                     </div>
+                      <div class="cart-item-block">
+                        <div class="cart-item-tovar">
+                           <div class="cart-item-img">
+                              <img src="images/cart-item.jpg" height="125" width="82" alt="">
+                           </div>
+                           <div class="cart-item-text">
+                              <div class="name">Водонагреватель Electrolux EWH 10 Genie O</div>
+                              <div class="cart-item-info">
+                                 <p>Артикул: <span>1158240</span></p>
+                                 <p>Производитель: <span>Electrolux (Испания)</span></p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="cart-item-price">
+                           <div class="title">Цена</div>
+                           <div class="total-price"><span class="price">9 940</span> <span class="rub">c</span></div>
+                           <div class="amount clearfix">
+                              <a class="minus">-</a>
+                              <input type="text" value="2">
+                              <a class="plus">+</a>
+                           </div>
+                           <div class="delete">
+                              <a href="#">удалить</a>
+                           </div>
+                        </div>
+                     </div>
+                      <div class="cart-item-block">
+                        <div class="cart-item-tovar">
+                           <div class="cart-item-img">
+                              <img src="images/cart-item.jpg" height="125" width="82" alt="">
+                           </div>
+                           <div class="cart-item-text">
+                              <div class="name">Водонагреватель Electrolux EWH 10 Genie O</div>
+                              <div class="cart-item-info">
+                                 <p>Артикул: <span>1158240</span></p>
+                                 <p>Производитель: <span>Electrolux (Испания)</span></p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="cart-item-price">
+                           <div class="title">Цена</div>
+                           <div class="total-price"><span class="price">9 940</span> <span class="rub">c</span></div>
+                           <div class="amount clearfix">
+                              <a class="minus">-</a>
+                              <input type="text" value="2">
+                              <a class="plus">+</a>
+                           </div>
+                           <div class="delete">
+                              <a href="#">удалить</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
 
-                     <div class="print-block">
-                        <a href="#" class="print-link">
-                           <span><img src="images/print.png" height="22" width="25" alt=""></span>Распечатать заказ
-                        </a>
+               <div class="col-md-5">
+                  <div class="row">
+                     <div class="right-status">
+                        <div class="method">
+                           <h4>Способ получения заказа</h4>
+                           <div class="radioblock">
+                              <div class="radio active"><span class="text-value">Самовывоз из магазина</span> <br> бесплатно </div>
+                              <div class="radio"><span class="text-value">Доставка по городу</span> <br>по Владивостоку и пригороду</div>
+                              <div class="radio"><span class="text-value">Доставка Транспортной компанией</span> <br>по территории всей России</div>
+                              <input type="hidden">
+                           </div>
+                        </div>
+                        <div class="in-total">
+                           <h4>Итого:</h4>
+                           <div class="in-total-block clearfix">
+                              <span>Стоимость:</span>
+                              <span>58 950 Р.</span>
+                           </div>
+                           <div class="in-total-block clearfix">
+                              <span>Доставка до точки выдачи:</span>
+                              <span>Бесплатно</span>
+                           </div>
+                           <div class="all-payment clearfix">
+                              <span class="text">Всего к оплате:</span>
+                              <p><span class="price">58 950</span> <span class="rub">c</span></p>
+                           </div>
+                        </div>
+                        <div class="cart-order">
+                           <a href="#">Оформить заказ</a>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -335,7 +430,6 @@
       </div>
    </div>
 </section>
-
 
 
 
@@ -523,6 +617,6 @@
 <script src="js/jquery-2.1.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/drop.js"></script>
+<script src="js/radio.js"></script>
 </body>
 </html>
