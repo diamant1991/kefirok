@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>cart_index-step2 noregistr</title>
+  <title>cart_index-step3</title>
   <!-- Bootstrap -->
   <!--  <link href="css/bootstrap.min.css" rel="stylesheet"> -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -227,7 +227,7 @@
       </div>
    </div>
 
-   <div class="cart clearfix">
+   <div class="cart cart-nop clearfix">
       <div class="container">
          <div class="row">
             <div class="col-xs-12">
@@ -250,12 +250,14 @@
                      </div>
                      <div class="col-sm-4">
                         <div class="row">
-                           <div class="step-block active">
+                           <div class="step-block complete">
                               <div class="title">Оформление заказа</div>
                               <div class="step-number">
                                  <div class="line"></div>
                                  <div class="numb-block">
-                                    <div class="numb">2</div>
+                                    <div class="numb">
+                                       <img src="images/cart-ok.png" height="10" width="12" alt="">
+                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -263,7 +265,7 @@
                      </div>
                      <div class="col-sm-4">
                         <div class="row">
-                           <div class="step-block">
+                           <div class="step-block active">
                               <div class="title">Заказ оформлен</div>
                               <div class="step-number">
                                  <div class="line"></div>
@@ -281,76 +283,54 @@
             <div class="cart-items clearfix">
                <div class="col-md-7">
                   <div class="row">
-                     <div class="big-cart-block">
-                        <div class="user-cart noreg clearfix">
-                           <h3>Данные получателя</h3>
-                           <div>Уже покупали у нас? <a href="#">Авторизуйтесь</a></div>
-                        </div>
-                        <div class="type-buyer">
-                           <div class="title">Тип покупателя</div>
-                           <div class="radio-reg clearfix">
-                              <div class="radio-btn">
-                                 <span>Компания,организация</span>
-                              </div>
-                              <div class="radio-btn active">
-                                 <span>Частный покупатель</span>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="cart-input">
-                           <div class="input-block reg-input cab-input clearfix">
-                              <div class="input-title">ФИО <span>*</span></div>
-                              <input type="text">
-                           </div>
-                           <div class="input-block reg-input cab-input clearfix">
-                              <div class="input-title">Телефон <span>*</span></div>
-                              <input type="text">
-                              <p class="primer">например: +7 (495) 123-4567</p>
-                           </div>
-                           <div class="input-block reg-input cab-input clearfix">
-                              <div class="input-title">Эл.почта <span>*</span></div>
-                              <input type="text">
-                           </div>
-                           <div class="input-block reg-input cab-input clearfix">
-                              <div class="input-title"></div>
-                              <div class="main-text"><span>*</span> обязательные поля для заполнения</div>
-                           </div>
-                        </div>
-                        <div class="delivery-cart">
-                           <h4>Адрес доставки</h4>
-                                 <div class="input-block reg-input cab-input clearfix">
-                                    <div class="input-title">Город <span>*</span></div>
-                                    <div class="select-choice">
-                                       <a href="javascript:void(0);" class="slct">Владивосток</a>
-                                       <ul class="drop" style="">
-                                          <li class="active">Владивосток</li>
-                                          <li>Город 2</li>
-                                          <li>Город 3</li>
-                                          <li>Город 4</li>
-                                       </ul>
-                                       <input type="hidden" id="select" value="Владивосток">
-                                    </div>
-                                 </div>
-                                 <div class="input-block reg-input cab-input clearfix">
-                                    <div class="input-title">Адрес <span>*</span></div>
-                                    <textarea></textarea>
-                                 </div>
-                     
-                     
-                        </div>
-
-                        <div class="payment-cart">
-                           <h4>Способ оплаты</h4>
-                           <div class="radioblock">
-                              <div class="radio active">Наличными</div>
-                              <div class="radio">Банковским переводом</div>
-                           </div>
+                     <div class="zakaz-block">
+                        <header>
+                           <h2>Информация о заказе # 2145245</h2>
+                           <h4>Заказ #2145245 от 17 июля 2015 / 13:22</h4>
+                           <p class="zakaz-text">Ваш заказ принят к исполнению. Наши менеджеры свяжутся с вами в течении ближайшего времени.</p>
+                        </header>
+                        <div class="data-prof">
+                           <h4>Данные покупателя</h4>
+                           <table class="data-table">
+                              <tbody><tr>
+                                 <td>ФИО:</td>
+                                 <td>Мамышев Сергей Владимирович</td>
+                              </tr>
+                              <tr>
+                                 <td>Компания:</td>
+                                 <td>ООО “Рога и Копыта”</td>
+                              </tr>
+                              <tr>
+                                 <td>Телефон:</td>
+                                 <td>+7 (423) 295-58-65</td>
+                              </tr>
+                              <tr>
+                                 <td>Факс:</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td>Электронная почта:</td>
+                                 <td>primer@mail.ru</td>
+                              </tr>
+                              <tr>
+                                 <td>Тип доставки:</td>
+                                 <td>Доставка по городу</td>
+                              </tr>
+                              <tr>
+                                 <td>Адрес:</td>
+                                 <td>Владивосток <br>ул. Новоивановская 45, офис 300</td>
+                              </tr>
+                              <tr>
+                                 <td>Способ оплаты:</td>
+                                 <td>Наличными при получении</td>
+                              </tr>
+                           </tbody></table>
                         </div>
                      </div>
                      <div class="empty-cart-text">
                         <a href="#" class="back">
                            <img src="images/back-link.png" height="12" width="16" alt="">
-                           <span>Вернуться в корзину</span>
+                           <span>Вернуться на главную</span>
                         </a>
                      </div>
                   </div>
@@ -388,15 +368,31 @@
                               <p><span class="price">58 950</span> <span class="rub">c</span></p>
                            </div>
                         </div>
-                        <div class="cart-order">
-                           <a href="#">Оформить заказ</a>
-                        </div>
-                        <div class="cart-data">
-                           Нажатием кнопки «Оформить заказ», я даю свое согласие на обработку персональных данных в соответствии с указанными <a href="#">здесь</a> условиями.
+                        <div class="print-block">
+                           <a href="#" class="print-link">
+                              <span><img src="images/print.png" height="22" width="25" alt=""></span>Распечатать заказ
+                           </a>
                         </div>
                      </div>
                   </div>
                </div>
+            </div>
+            <div class="like-block hidden-xs">
+               <div class="like-text">
+                  <div class="title">Понравился наш магазин?</div>
+                  <div class="review-like">
+                     <span>Оставьте свой <br>отзыв на</span>
+                     <a href="#"><img src="images/yandex.png" height="41" width="188" alt=""></a>
+                  </div>
+                  <div class="review-like">
+                     <img src="images/star.png" height="32" width="175" alt="">
+                     <a href="#" class="get-review">Оставить отзыв об ecosanteh.ru</a>
+                  </div>
+                  <div class="bot-like">
+                     Ваши отзывы позволят нам улучшать свой сервис. Спасибо вам.
+                  </div>
+               </div>
+               <div class="clear"></div>
             </div>
          </div>
       </div>
