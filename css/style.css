@@ -3419,18 +3419,14 @@ ul{
    padding-left: 120px;
 }
 .cart-item-img{
-   position: absolute;
-   left: 20px;
    top: 0;
    z-index: 2;
+   text-align: center;
 }
 .cart-items{
    margin-top: 50px;
 }
 .cart-item-price{
-   position: absolute;
-   right: 0;
-   top: 15px;
    z-index: 2;
    width: 145px;
    border-left: 1px solid #dbdbdb;
@@ -3440,11 +3436,21 @@ ul{
 .cart-item-block{
    min-height: 170px;
    padding: 15px 0;
+   padding-left: 15px;
 }
 .cart-item-text .name{
    color: #0e4582;
    font-size: 16px;
 }
+.basket-table{
+  width: 100%;
+}
+  .basket-table td{
+    vertical-align: top;
+  }
+  .basket-table .td-name{
+    width: 60%;
+  }
 .cart-item-text p{
    margin-bottom: 0;
    color: #6f6f6f;
