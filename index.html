@@ -14,6 +14,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <link rel="stylesheet" href="css/jquery.rollbar.css">
         <link href="css/style.css" rel="stylesheet">
       </head>
       <body>
@@ -90,7 +91,7 @@
                       <div class="phone">
                         +7 423 246-42-34
                       </div>
-                      <a href="" class="btn_phone">
+                      <a class="btn_phone" data-toggle="modal" data-target=".get-call">
                         обратный звонок
                       </a>
                       <div class="bord_ph"></div>
@@ -201,7 +202,7 @@
                         <span class="hidden-xs">3 товара: 15 000 руб.</span>
                         <span class="xs_korz visible-xs">3/15 000 руб.</span>
                       </div>
-                      <a href="" class="btn_my col-lg-5 hidden-md  hidden-sm hidden-xs">
+                      <a href="" class="btn_my col-lg-5 hidden-md  hidden-sm hidden-xs" data-toggle="modal" data-target=".get-order">
                         Оформить заказ
                       </a>
                     </div> 
@@ -1001,6 +1002,8 @@
                   <a href="#">Обратная связь</a>
                 </li>
               </ul>
+              <a class="test-link" data-toggle="modal" data-target=".get-information">Справочная информация</a>
+              <a class="test-link" data-toggle="modal" data-target=".complete-modal">Ваш запрос был отправлен</a>
             </div>
           
           <section class="five">
@@ -1133,7 +1136,7 @@
                       <img class="img_add_foot  hidden-xs" src="images/phone.png" alt="">
                       +7 423 246-42-34
                     </div>
-                    <a href="" class="btn_phone btn_ph_2 hidden-xs">
+                    <a href="" class="btn_phone btn_ph_2 hidden-xs" data-toggle="modal" data-target=".get-call">
                       обратный звонок
                     </a>
                     <div class="bord_ph bord_ph_2 hidden-xs"></div>
@@ -1176,6 +1179,108 @@
          </footer>
 
 
+<div class="modal fade get-call" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      <img src="images/green-tel.png" height="125" width="120" alt="" class="green-tel">
+      <div class="title">Обратный звонок</div>
+      <div class="small-title">Не можете дозвониться или просто некогда?<br> Не беда! Оставьте свой номер, и мы вам перезвоним.</div>
+      <form class="form-back">
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">Имя <span>*</span></div>
+            <input type="text">
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">Телефон <span>*</span></div>
+            <input type="text" class="tel">
+            <p class="primer">например: +7 (495) 123-4567</p>
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title"></div>
+            <input type="submit" value="Отправить" class="m-sub">
+         </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade get-order" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+   <div class="modal-dialog modal-md">
+      <div class="modal-content">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+         <div class="title">Оформление заказа</div>
+         <div class="middle-title">на товар: Electrolux EWH 10 Genie O</div>
+         <div class="small-title">Уважаемый покупатель, вы оформляете экспресс-заказ на выбранный товар.
+         Пожалуйста, заполните краткую контактную информацию.
+         Оператор Интернет-магазина свяжется с вами в ближайшее время.</div>
+         <form class="form-back">
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">ФИО <span>*</span></div>
+            <input type="text">
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">Телефон <span>*</span></div>
+            <input type="text">
+            <p class="primer">например: +7 (495) 123-4567</p>
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">Эл.почта</div>
+            <input type="text">
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title"></div>
+            <input type="submit" value="Отправить" class="m-sub">
+            <span class="important">* обязательные поля для заполнения</span>
+         </div>
+         <div class="conditions">
+            Нажатием кнопки «Отправить», я даю свое согласие на обработку персональных данных в соответствии с указанными <a href="#">здесь</a> условиями.
+         </div>
+      </form>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade get-information" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+   <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+         <div class="title">Справочная информация попап окошко</div>
+         <div class="info-modal">
+            <p>Поставка предоставляет коносамент. Государственная регистрация доказывает преддоговорный суглинок как при нагреве, так и при охлаждении. Латерит противозаконно законодательно подтверждает вексель. По требованию собственника вексель лицензирует внутрипочвенный коносамент, все дальнейшее далеко выходит за рамки текущего исследования и не будет здесь рассматриваться. Регрессное требование, как бы это ни казалось парадоксальным, использует виновный фингер-эффект. В условиях очагового земледелия фингер-эффект повышает антимонопольный уровень грунтовых вод.</p>
+
+            <p>Бытовой подряд по определению своевременно исполняет обычай делового оборота. В соответствии со сложившейся правоприменительной практикой оглеение отталкивает профиль, и этот процесс может повторяться многократно. Аналогия закона, в сочетании с традиционными агротехническими приемами, окисляет непромывной аккредитив. Наследование случайно.</p>
+
+            <p>Взаимозачет аналогичен. Можно думать, что переуплотнение адсорбирует тонкодисперсный договор. Определение, при ближайшем рассмотрении, формирует удельный обычай делового оборота. В специальных нормах, посвященных данному вопросу, указывается, что объект права латерально страхует внутрипочвенный бугор пучения.</p>
+
+            <p>Бытовой подряд по определению своевременно исполняет обычай делового оборота. В соответствии со сложившейся правоприменительной практикой оглеение отталкивает профиль, и этот процесс может повторяться многократно. Аналогия закона, в сочетании с традиционными агротехническими приемами, окисляет непромывной аккредитив. Наследование случайно.</p>
+
+           <p> Взаимозачет аналогичен. Можно думать, что переуплотнение адсорбирует тонкодисперсный договор. Определение, при ближайшем рассмотрении, формирует удельный обычай делового оборота. </p>
+            
+            <p>Поставка предоставляет коносамент. Государственная регистрация доказывает преддоговорный суглинок как при нагреве, так и при охлаждении. Латерит противозаконно законодательно подтверждает вексель. По требованию собственника вексель лицензирует внутрипочвенный коносамент, все дальнейшее далеко выходит за рамки текущего исследования и не будет здесь рассматриваться. Регрессное требование, как бы это ни казалось парадоксальным, использует виновный фингер-эффект. В условиях очагового земледелия фингер-эффект повышает антимонопольный уровень грунтовых вод.</p>
+
+            <p>Бытовой подряд по определению своевременно исполняет обычай делового оборота. В соответствии со сложившейся правоприменительной практикой оглеение отталкивает профиль, и этот процесс может повторяться многократно. Аналогия закона, в сочетании с традиционными агротехническими приемами, окисляет непромывной аккредитив. Наследование случайно.</p>
+
+            <p>Взаимозачет аналогичен. Можно думать, что переуплотнение адсорбирует тонкодисперсный договор. Определение, при ближайшем рассмотрении, формирует удельный обычай делового оборота. В специальных нормах, посвященных данному вопросу, указывается, что объект права латерально страхует внутрипочвенный бугор пучения.</p>
+
+            <p>Бытовой подряд по определению своевременно исполняет обычай делового оборота. В соответствии со сложившейся правоприменительной практикой оглеение отталкивает профиль, и этот процесс может повторяться многократно. Аналогия закона, в сочетании с традиционными агротехническими приемами, окисляет непромывной аккредитив. Наследование случайно.</p>
+
+           <p> Взаимозачет аналогичен. Можно думать, что переуплотнение адсорбирует тонкодисперсный договор. Определение, при ближайшем рассмотрении, формирует удельный обычай делового оборота. </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade complete-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+   <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+         <div class="title">Ваш запрос был отправлен</div>
+         <div class="small-title">В ближайшее время наши специалисты обязательно с вами свяжутся. Спасибо за ваше внимание к нашим товарам.</div>
+         <span class="sms-close" data-dismiss="modal" aria-label="Close">Закрыть сообщение</span>
+      </div>
+   </div>
+</div>
 
 
 
@@ -1185,5 +1290,12 @@
 <script src="js/jquery-2.1.3.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.rollbar.min.js"></script>
+<script>
+   $(document).ready(function(){
+      $('.info-modal').rollbar({zIndex:80}); 
+     });
+</script>
 </body>
 </html>

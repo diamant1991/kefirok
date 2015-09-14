@@ -537,7 +537,7 @@
                               <a href="#" class="basket-link in-basket">В корзине</a>
                            </div>
                            <div class="one-click">
-                              <a href="#" class="click-link">
+                              <a class="click-link" data-toggle="modal" data-target=".get-order">
                                  <img src="images/one-link.png" height="12" width="10" alt="">
                                  <span>Купить в один клик</span>
                               </a>
@@ -557,7 +557,7 @@
                            </div>
 
                            <div class="ques-block">
-                              <a href="#" class="ques-link"><span>Задать вопрос по товару</span></a>
+                              <a class="ques-link" data-toggle="modal" data-target=".get-question"><span>Задать вопрос по товару</span></a>
                            </div>
                         </div>
                      </div>
@@ -889,6 +889,83 @@
              </div> 
            </div>
          </footer>
+
+
+<div class="modal fade get-order" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+   <div class="modal-dialog modal-md">
+      <div class="modal-content">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+         <div class="title">Оформление заказа</div>
+         <div class="middle-title">на товар: Electrolux EWH 10 Genie O</div>
+         <div class="small-title">Уважаемый покупатель, вы оформляете экспресс-заказ на выбранный товар.
+         Пожалуйста, заполните краткую контактную информацию.
+         Оператор Интернет-магазина свяжется с вами в ближайшее время.</div>
+         <form class="form-back">
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">ФИО <span>*</span></div>
+            <input type="text">
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">Телефон <span>*</span></div>
+            <input type="text">
+            <p class="primer">например: +7 (495) 123-4567</p>
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">Эл.почта</div>
+            <input type="text">
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title"></div>
+            <input type="submit" value="Отправить" class="m-sub">
+            <span class="important">* обязательные поля для заполнения</span>
+         </div>
+         <div class="conditions">
+            Нажатием кнопки «Отправить», я даю свое согласие на обработку персональных данных в соответствии с указанными <a href="#">здесь</a> условиями.
+         </div>
+      </form>
+      </div>
+   </div>
+</div>
+
+
+<div class="modal fade get-question" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+   <div class="modal-dialog modal-md">
+      <div class="modal-content">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+         <img src="images/green-ques.png" height="158" width="157" alt="" class="green-tel">
+         <div class="title">Задать вопрос</div>
+         <div class="middle-title">по товару: Electrolux EWH 10 Genie O</div>
+         <div class="small-title">Ответы на вопросы, связанные с заказом и доставкой товара, вы можете посмотреть в <a href="#">нашем информационном разделе “Покупателям”</a></div>
+         <form class="form-back">
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">ФИО <span>*</span></div>
+            <input type="text">
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">Телефон <span>*</span></div>
+            <input type="text">
+            <p class="primer">например: +7 (495) 123-4567</p>
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">Эл.почта</div>
+            <input type="text">
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title">Вопрос <span>*</span></div>
+            <textarea></textarea>
+         </div>
+         <div class="input-block reg-input cab-input clearfix">
+            <div class="input-title"></div>
+            <input type="submit" value="Отправить" class="m-sub">
+            <span class="important">* обязательные поля для заполнения</span>
+         </div>
+         <div class="conditions">
+            Нажатием кнопки «Отправить», я даю свое согласие на обработку персональных данных в соответствии с указанными <a href="#">здесь</a> условиями.
+         </div>
+      </form>
+      </div>
+   </div>
+</div>
 
 
 
