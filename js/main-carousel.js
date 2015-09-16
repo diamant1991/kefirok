@@ -120,3 +120,47 @@ sync2.owlCarousel({
 
 
 });
+
+$(document).ready(function() {
+ 
+  var newOwl = $("#new-carousel");
+ 
+  newOwl.owlCarousel({
+      items : 5,
+      itemsDesktop : [1300,5],
+      itemsDesktopSmall : [1200,4],
+      itemsTablet: [1030,3],
+      slideSpeed: 500,
+      itemsMobile : [767,1]
+  });
+
+ $("#next").click(function(){
+      newOwl.trigger('owl.next');
+    })
+    $("#prev").click(function(){
+      newOwl.trigger('owl.prev');
+    })
+ 
+});
+
+$(document).ready(function() {
+ 
+  var newNews = $("#news-carousel");
+ 
+  newNews.owlCarousel({
+      items : 4,
+      itemsDesktop : [1300,4],
+      itemsDesktopSmall : [1200,3],
+      itemsTablet: [1030,2],
+      slideSpeed: 500,
+      itemsMobile : [767,1]
+  });
+
+   $("#next-news").click(function(){
+      newNews.trigger('owl.next');
+    })
+    $("#prev-news").click(function(){
+      newNews.trigger('owl.prev');
+    })
+ 
+});
