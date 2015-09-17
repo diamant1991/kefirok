@@ -89,7 +89,7 @@
                       <div class="phone_txt hidden-sm">
                         справки по телефону
                       </div>
-                      <div class="phone">
+                      <div class="phone phone_header">
                         +7 423 246-42-34
                       </div>
                       <a class="btn_phone" data-toggle="modal" data-target=".get-call">
@@ -101,36 +101,34 @@
                 </div>
                 <div class="col-lg-7 col-md-6 col-sm-8 col-xs-10 col-xs-offset-1 col-lg-offset-0 col-md-offset-0 col-sm-offset-0">
                   <div class="row ">
-                    <form class="form-search form-inline  col-lg-12 col-md-12 col-sm-12 col-xs-12 pad_xs_0">
-                      <div class="input-prepend input-append col-lg-12 col-md-12 col-sm-12 col-xs-12 pad_xs_0">
-                        <div class="row">
-                          <label for="search_my" class="search_my_label  hidden-xs col-lg-8 col-md-8 hidden-sm"> Все инновации для Вас.</label>
-                          <div class="visible-sm call_sm_my col-sm-12 hidden-xs">
-                            <div class="phone">
-                              +7 423 246-42-34
-                            </div>
-                            <a href="" class="btn_phone">
-                              обратный звонок
-                            </a>
-                            <div class="bord_ph"></div>
-                          </div>
-                          <div class="mt_30 visible-xs"></div>
-                          <input type="text" class=" col-lg-8 col-md-8 search_my col-sm-11 col-xs-9">
-                          <span class="add-on">
-                            <select class="col-lg-3 col-md-3 hidden-sm hidden-xs select_search_my"> 
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-                            <button type="submit" class="btn_search_my btn col-lg-1 col-md-1 col-sm-1 hidden-xs"></button>
-                            <button type="submit" class="btn_search_my_2 btn visible-xs col-xs-3">Найти</button>
-                            <div class="mt_30 visible-xs"></div>
-                          </span>
-                        </div>
-                      </div>
-                    </form>
+                     <div class="header-search">
+                        <div class="title">Все инновации для Вас.</div>
+                        <form>
+                           <fieldset class="search-area">
+                              <input type="text" placeholder="Поиск" class="header_search_input">
+                              <div class="choice-category hidden-sm hidden-xs">
+                                 <div class="select-category">
+                                    <a href="javascript:void(0);" class="slct-cat">Все категории</a>
+                                    <ul class="drop-cat">
+                                       <li>
+                                          <span class="choice-item">Каталог</span>
+                                          <ul class="drop-cat-child">
+                                             <li><span class="choice-item">Баки мембранные</span></li>
+                                             <li><span class="choice-item">Водонагреватели, емкости</span></li>
+                                             <li><span class="choice-item">Канализация</span></li>
+                                             <li><span class="choice-item">Колодец кабельный</span></li>
+                                             <li><span class="choice-item">Котлы</span></li>
+                                          </ul>
+                                       </li>
+                                       <li><span class="choice-item">Новости</span></li>
+                                    </ul>
+                                    <input type="hidden" id="select-cat" >
+                                 </div>
+                              </div>
+                              <input type="submit" value="" class="header_search_btn">
+                           </fieldset>
+                        </form>
+                     </div>
                   </div>
                 </div>
               </div>
@@ -618,12 +616,8 @@
              <div class="tab-content tab-content_my">
                <div class="tab-pane active clearfix" id="new">
                   <div class="car-trigger">
-                     <a class="car-prev" id="prev">
-                        <img src="images/car-prev.png" height="24" width="24" alt="">
-                     </a>
-                     <a class="car-next" id="next">
-                        <img src="images/car-next.png" height="24" width="24" alt="">
-                     </a>
+                     <a class="car-prev" id="prev-news"></a>
+                     <a class="car-next" id="next-news"></a>
                   </div>
                   <div id="new-carousel" class="owl-carousel owl-theme ">
                      <div class="item">
@@ -651,12 +645,15 @@
                               <div class="discounts">-10%</div>
                               <div class="now_price">4970 р</div>
                             </div>
-                            <div class="table_cell_pr_2">
-                              <div class="center">
-                                <a class="korz_my"href=""><img src="images/korz.png" alt=""></a>    
-                                <a class="file_my"href=""><img src="images/file.png" alt=""></a> 
-                              </div>
-                            </div> 
+                            <div class="var-btn">
+                              
+                                <a class="korz_my" href="#">
+                                   в корзину
+                                </a>    
+                                <a class="file_my" href="">
+                                   купить
+                                </a> 
+                           </div>
                         </div>
                      </div>
                      <div class="item">
@@ -683,12 +680,15 @@
                               <div class="discounts">-10%</div> -->
                               <div class="now_price">8 800 р</div>
                             </div>
-                            <div class="table_cell_pr_2">
-                             <div class="center">
-                               <a class="korz_my"href=""><img src="images/korz.png" alt=""></a>    
-                               <a class="file_my"href=""><img src="images/file.png" alt=""></a> 
-                             </div>
-                           </div> 
+                            <div class="var-btn">
+                              
+                                <a class="korz_my" href="#">
+                                   в корзину
+                                </a>    
+                                <a class="file_my" href="">
+                                   купить
+                                </a> 
+                           </div>
                         </div>
                      </div>
                      <div class="item">
@@ -715,12 +715,15 @@
                             <div class="discounts">-10%</div> -->
                             <div class="now_price">12880 р</div>
                           </div>
-                          <div class="table_cell_pr_2">
-                            <div class="center">
-                              <a class="korz_my"href=""><img src="images/korz.png" alt=""></a>    
-                              <a class="file_my"href=""><img src="images/file.png" alt=""></a> 
-                            </div>
-                          </div> 
+                          <div class="var-btn">
+                              
+                                <a class="korz_my" href="#">
+                                   в корзину
+                                </a>    
+                                <a class="file_my" href="">
+                                   купить
+                                </a> 
+                           </div>
                         </div>
                      </div>
                      <div class="item">
@@ -748,12 +751,15 @@
                              <div class="discounts">-10%</div> -->
                              <div class="now_price">42 220 р</div>
                            </div>
-                           <div class="table_cell_pr_2">
-                            <div class="center">
-                              <a class="korz_my"href=""><img src="images/korz.png" alt=""></a>    
-                              <a class="file_my"href=""><img src="images/file.png" alt=""></a> 
-                            </div>
-                          </div> 
+                           <div class="var-btn">
+                              
+                                <a class="korz_my" href="#">
+                                   в корзину
+                                </a>    
+                                <a class="file_my" href="">
+                                   купить
+                                </a> 
+                           </div>
                         </div>
                      </div>
                      <div class="item">
@@ -781,12 +787,15 @@
                               <div class="discounts">-10%</div>
                               <div class="now_price">4970 р</div>
                             </div>
-                            <div class="table_cell_pr_2">
-                              <div class="center">
-                                <a class="korz_my"href=""><img src="images/korz.png" alt=""></a>    
-                                <a class="file_my"href=""><img src="images/file.png" alt=""></a> 
-                              </div>
-                            </div> 
+                            <div class="var-btn">
+                              
+                                <a class="korz_my" href="#">
+                                   в корзину
+                                </a>    
+                                <a class="file_my" href="">
+                                   купить
+                                </a> 
+                           </div>
                         </div>
                      </div>
                      <div class="item">
@@ -813,11 +822,85 @@
                               <div class="discounts">-10%</div> -->
                               <div class="now_price">8 800 р</div>
                             </div>
-                            <div class="table_cell_pr_2">
-                             <div class="center">
-                               <a class="korz_my"href=""><img src="images/korz.png" alt=""></a>    
-                               <a class="file_my"href=""><img src="images/file.png" alt=""></a> 
+                            <div class="var-btn">
+                              
+                                <a class="korz_my" href="#">
+                                   в корзину
+                                </a>    
+                                <a class="file_my" href="">
+                                   купить
+                                </a> 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="new-item-block">
+                           <div class="noact_my">
+                              <div class="selloff ">
+                                распродажа
+                              </div>
+                            </div>
+                            <div class="sale_my_tab">
+                              <div class="for_img_my">
+                                <img class="img-responsive" src="images/im_1.png" alt="">
+                              </div>
+                            </div>
+                            <div class="sale_my_tab">
+                              <div class="sale_for_a">
+                                <a class="sale_a" href="">
+                                  Циркуляционный насос
+                                  Wilo-Star-Rs \J
+                                </a>
+                              </div>
+                            </div>
+                            <div class="table_cell_pr">
+                              <div class="old_price">5 890</div>
+                              <div class="discounts">-10%</div>
+                              <div class="now_price">4970 р</div>
+                            </div>
+                            <div class="var-btn">
+                              
+                                <a class="korz_my" href="#">
+                                   в корзину
+                                </a>    
+                                <a class="file_my" href="">
+                                   купить
+                                </a> 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="new-item-block">
+                           <div class="noact_my">
+                            <!--    <div class="selloff ">
+                                 распродажа
+                               </div> -->
                              </div>
+                             <div class="sale_my_tab">
+                               <div class="for_img_my">
+                                 <img class="img-responsive" src="images/im_2.png" alt="">
+                               </div>
+                             </div>
+                             <div class="sale_my_tab">
+                               <div class="sale_for_a">
+                                 <a class="sale_a" href="">
+                                   Бытовой насос SFA Sanitop
+                                 </a>
+                               </div>
+                             </div>
+                             <div class="table_cell_pr">
+                              <!--    <div class="old_price">5 890</div>
+                              <div class="discounts">-10%</div> -->
+                              <div class="now_price">8 800 р</div>
+                            </div>
+                            <div class="var-btn">
+                              
+                                <a class="korz_my" href="#">
+                                   в корзину
+                                </a>    
+                                <a class="file_my" href="">
+                                   купить
+                                </a> 
                            </div> 
                         </div>
                      </div>
@@ -846,12 +929,15 @@
                               <div class="discounts">-10%</div>
                               <div class="now_price">4970 р</div>
                             </div>
-                            <div class="table_cell_pr_2">
-                              <div class="center">
-                                <a class="korz_my"href=""><img src="images/korz.png" alt=""></a>    
-                                <a class="file_my"href=""><img src="images/file.png" alt=""></a> 
-                              </div>
-                            </div> 
+                            <div class="var-btn">
+                              
+                                <a class="korz_my" href="#">
+                                   в корзину
+                                </a>    
+                                <a class="file_my" href="">
+                                   купить
+                                </a> 
+                           </div>
                         </div>
                      </div>
                      <div class="item">
@@ -878,77 +964,15 @@
                               <div class="discounts">-10%</div> -->
                               <div class="now_price">8 800 р</div>
                             </div>
-                            <div class="table_cell_pr_2">
-                             <div class="center">
-                               <a class="korz_my"href=""><img src="images/korz.png" alt=""></a>    
-                               <a class="file_my"href=""><img src="images/file.png" alt=""></a> 
-                             </div>
-                           </div> 
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="new-item-block">
-                           <div class="noact_my">
-                              <div class="selloff ">
-                                распродажа
-                              </div>
-                            </div>
-                            <div class="sale_my_tab">
-                              <div class="for_img_my">
-                                <img class="img-responsive" src="images/im_1.png" alt="">
-                              </div>
-                            </div>
-                            <div class="sale_my_tab">
-                              <div class="sale_for_a">
-                                <a class="sale_a" href="">
-                                  Циркуляционный насос
-                                  Wilo-Star-Rs \J
-                                </a>
-                              </div>
-                            </div>
-                            <div class="table_cell_pr">
-                              <div class="old_price">5 890</div>
-                              <div class="discounts">-10%</div>
-                              <div class="now_price">4970 р</div>
-                            </div>
-                            <div class="table_cell_pr_2">
-                              <div class="center">
-                                <a class="korz_my"href=""><img src="images/korz.png" alt=""></a>    
-                                <a class="file_my"href=""><img src="images/file.png" alt=""></a> 
-                              </div>
-                            </div> 
-                        </div>
-                     </div>
-                     <div class="item">
-                        <div class="new-item-block">
-                           <div class="noact_my">
-                            <!--    <div class="selloff ">
-                                 распродажа
-                               </div> -->
-                             </div>
-                             <div class="sale_my_tab">
-                               <div class="for_img_my">
-                                 <img class="img-responsive" src="images/im_2.png" alt="">
-                               </div>
-                             </div>
-                             <div class="sale_my_tab">
-                               <div class="sale_for_a">
-                                 <a class="sale_a" href="">
-                                   Бытовой насос SFA Sanitop
-                                 </a>
-                               </div>
-                             </div>
-                             <div class="table_cell_pr">
-                              <!--    <div class="old_price">5 890</div>
-                              <div class="discounts">-10%</div> -->
-                              <div class="now_price">8 800 р</div>
-                            </div>
-                            <div class="table_cell_pr_2">
-                             <div class="center">
-                               <a class="korz_my"href=""><img src="images/korz.png" alt=""></a>    
-                               <a class="file_my"href=""><img src="images/file.png" alt=""></a> 
-                             </div>
-                           </div> 
+                            <div class="var-btn">
+                              
+                                <a class="korz_my" href="#">
+                                   в корзину
+                                </a>    
+                                <a class="file_my" href="">
+                                   купить
+                                </a> 
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -972,12 +996,8 @@
                            <a href="#">все события</a>
                         </div>
                         <div class="car-trigger">
-                           <a class="car-prev" id="prev-news">
-                              <img src="images/car-prev.png" height="24" width="24" alt="">
-                           </a>
-                           <a class="car-next" id="next-news">
-                              <img src="images/car-next.png" height="24" width="24" alt="">
-                           </a>
+                           <a class="car-prev" id="prev-news"></a>
+                           <a class="car-next" id="next-news"></a>
                         </div>
                         <div id="news-carousel" class="owl-carousel owl-theme ">
                            <div class="item">
@@ -1430,9 +1450,7 @@
    </div>
 </div>
 
-<a class="scroll-up" id="top">
-   <img src="images/arrow-up.png" height="53" width="53" alt="">
-</a>
+<a class="scroll-up" id="top"></a>
 
 
 

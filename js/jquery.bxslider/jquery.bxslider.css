@@ -103,12 +103,16 @@
 	left: 10px;
 	background: url(../../images/slide-prev.jpg)no-repeat;
 }
-
+	.bx-wrapper .bx-prev:hover{
+		background: url(../../images/car-prev-active.png)no-repeat;
+	}
 .bx-wrapper .bx-next {
 	right: 10px;
 	background: url(../../images/slide-next.jpg)no-repeat;
 }
-
+	.bx-wrapper .bx-next:hover{
+		background: url(../../images/car-next-active.png)no-repeat;
+	}
 
 
 .bx-wrapper .bx-controls-direction a {

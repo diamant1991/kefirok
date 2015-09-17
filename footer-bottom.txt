@@ -1,0 +1,2 @@
+Прижать футер к низу:
+пример на странице i_enter+registration.html обернул все wrapper, контентную часть обернул в wrapper-content,  все что относится к футеру footer-wrapper
