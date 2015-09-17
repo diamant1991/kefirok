@@ -4238,8 +4238,23 @@ ul{
    right: 7%;
    display: none;
 }
-
-
+.gallery-big{
+   margin-top: 5px;
+}
+.gallery-big a{
+   text-decoration: none !important;
+   cursor: pointer;
+}
+.gallery-big img{
+   margin-right: 5px;
+   position: relative;
+   top: 2px;
+}
+.gallery-big span{
+   color: #195393;
+   font-size: 12px;
+   border-bottom: 1px dashed #195393;
+}
 
 
 @media(max-width: 1279px){
@@ -4362,6 +4377,9 @@ ul{
 }
 
 @media(max-width: 767px){
+   .gallery-big{
+      margin-bottom: 30px;
+   }
    .owl-item-img{
       height: 190px;
    }

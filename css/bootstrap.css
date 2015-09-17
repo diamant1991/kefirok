@@ -4751,8 +4751,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .breadcrumb {
   padding: 10px 0;
-  margin-bottom: 20px;
   list-style: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .breadcrumb > li {
   display: inline-block;
