@@ -597,8 +597,8 @@
 
                   <div class="tovar-text">
                      <div class="toogle-link">
-                        <a href="#" class="active">Описание</a>
-                        <a href="#">Технические характеристики</a>
+                        <a class="active" onclick="opcl3(mydivs3,'.desc-text'); return false;">Описание</a>
+                        <a onclick="opcl3(mydivs3,'.properties-item'); return false;">Технические характеристики</a>
                      </div>
 
                      <div class="tovar-desc">
@@ -1053,6 +1053,24 @@ $(document).ready(function() {
       fadeDuration: 400,
       positionFromTop: 150
     })
+</script>
+<script>
+   $(document).ready(function() {
+      $('.toogle-link a').click(function() {
+         $('.toogle-link a').removeClass('active');
+         $(this).addClass('active');
+      });
+   });
+   var mydivs3 = new Array('.desc-text','.properties-item');
+
+   function opcl3(arr, e){
+       if ($(e).css('display') == 'none'){
+           for(var i in arr){   
+              $(arr[i]).hide();     
+           }
+           $(e).show();       
+       }
+   }
 </script>
 </body>
 </html>

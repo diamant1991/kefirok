@@ -2354,17 +2354,23 @@ ul{
    background: -o-linear-gradient(90deg, rgb(248, 248, 248) 30%, rgb(242, 242, 242) 100%);
    background: -ms-linear-gradient(90deg, rgb(248, 248, 248) 30%, rgb(242, 242, 242) 100%);
    background: linear-gradient(180deg, rgb(248, 248, 248) 30%, rgb(242, 242, 242) 100%);
+   cursor: pointer;
 }
    .toogle-link a.active{
       color: #fff;
       background: #093b73;
    }
-
+.properties-item{
+   display: none;
+}
 .tovar-text{
    margin-top: 30px;
 }
 .tovar-desc{
    margin-top: 20px;
+   -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+      -moz-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+           box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
 }
 .tovar-desc h5{
    color: #0b3666;
@@ -2375,14 +2381,12 @@ ul{
 .desc-text{
    color: #373a3d;
    font-size: 14px;
+   padding-bottom: 40px;
 }
 .properties-item{
    margin-top: 30px;
    padding-bottom: 40px;
    width: 100%;
-   -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-      -moz-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
-           box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
 }
 
 .properties-item table{
