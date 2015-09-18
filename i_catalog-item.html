@@ -15,6 +15,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <link rel="stylesheet" href="js/owl.carousel/owl.carousel.css">
+        <link rel="stylesheet" href="js/lightbox/css/lightbox.css">
         <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -355,13 +357,11 @@
                           </li>
                         </ul>
                       </li>
-                       <li class="dropdown" >
-                        <a class="dropdown-toggle"
-                           data-toggle="dropdown" 
-                           href="">
+                       <li class="dropdown dropdown-active" >
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="">
                            Водонагреватели, емкости
                         </a>
-                        <ul class="dropdown-menu dropdown-menu_aside">
+                        <ul class="dropdown-menu dropdown-menu-active">
                           <li>
                             <a href="">
                              водонагреватели проточные
@@ -373,7 +373,7 @@
                               накопительные
                             </a>
                           </li>
-                          <li>
+                          <li class="active-cat">
                             <a href="">
                               косвенного нагрева
                             </a>
@@ -489,10 +489,26 @@
                         <div class="row">
                            <div class="tovar-slider">
                               <ul class="bxslider">
-                                <li><img src="images/bx-item.jpg" height="300" width="152" /></li>
-                                <li><img src="images/bx-item.jpg" height="300" width="152" /></li>
-                                <li><img src="images/bx-item.jpg" height="300" width="152" /></li>
-                                <li><img src="images/bx-item.jpg" height="300" width="152" /></li>
+                                <li>
+                                    <a href="images/bx-item.jpg" data-lightbox="roadtrip">
+                                       <img src="images/bx-item.jpg" alt="">
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="images/bx-item.jpg" data-lightbox="roadtrip">
+                                       <img src="images/bx-item.jpg" alt="">
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="images/bx-item.jpg" data-lightbox="roadtrip">
+                                       <img src="images/bx-item.jpg" alt="">
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a href="images/bx-item.jpg" data-lightbox="roadtrip">
+                                       <img src="images/bx-item.jpg" alt="">
+                                    </a>
+                                </li>
                               </ul>
 
                               <div id="bx-pager" class="thumbnail-bx">
@@ -632,104 +648,184 @@
                      <div class="related">
                         <h4>сопутствующие товары</h4>
                         <div class="catalog-items clearfix">
-                        <div class="col-sm-4">
-                           <div class="row">
-                              <div class="item-block">
-                                 <div class="item-img">
-                                    <div class="item-img-cell">
-                                       <img src="images/cat-item.jpg" height="148" width="148" alt="" class="big-item-img">
+                           <div class="car-trigger">
+                              <a class="car-prev" id="prev-cat"></a>
+                              <a class="car-next" id="next-cat"></a>
+                           </div>
+                           <div id="catalog-carousel" class="owl-carousel owl-theme ">
+                              <div class="item">
+                                 <div class="item-block">
+                                    <div class="item-img">
+                                       <div class="item-img-cell">
+                                          <img src="images/cat-item.jpg" height="148" width="148" alt="" class="big-item-img">
+                                       </div>
+                                    </div>
+                                    <div class="item-link">
+                                       <a href="#">Electrolux EWH 80 Heatronic DL</a>
+                                    </div>
+                                    <div class="item-list">
+                                       <ul>
+                                          <li>
+                                             Тип: электрический накопительный водонагреватель  
+                                          </li>
+                                          <li>
+                                             Мощность: 1000/2000 Вт  
+                                          </li>
+                                          <li>Емкость: 30 литров </li>
+                                       </ul>
+                                    </div>
+                                    <div class="item-price">
+                                       <div class="prev-price"><span>5 850</span> <span>i</span></div>
+                                       <div class="sale-info">-10%</div>
+                                       <div class="today-price">4 970 <span>c</span></div>
+                                    </div>
+                                    <div class="var-btn">
+                                       <a class="korz_my" href="#">
+                                            в корзину
+                                       </a>    
+                                       <a class="file_my" href="">
+                                            купить
+                                       </a> 
                                     </div>
                                  </div>
-                                 <div class="item-link">
-                                    <a href="#">Electrolux EWH 80 Heatronic DL</a>
+                              </div>
+                              <div class="item">
+                                 <div class="item-block">
+                                    <div class="item-img">
+                                       <div class="item-img-cell">
+                                          <img src="images/cat-item.jpg" height="148" width="148" alt="" class="big-item-img">
+                                       </div>
+                                    </div>
+                                    <div class="item-link">
+                                       <a href="#">Electrolux EWH 80 Heatronic DL</a>
+                                    </div>
+                                    <div class="item-list">
+                                       <ul>
+                                          <li>
+                                             Тип: электрический накопительный водонагреватель  
+                                          </li>
+                                          <li>
+                                             Мощность: 1000/2000 Вт  
+                                          </li>
+                                          <li>Емкость: 30 литров </li>
+                                       </ul>
+                                    </div>
+                                    <div class="item-price">
+                                       <div class="today-price">8 970 <span>c</span></div>
+                                    </div>
+                                    <div class="var-btn">
+                                       <a class="korz_my" href="#">
+                                            в корзину
+                                       </a>    
+                                       <a class="file_my" href="">
+                                            купить
+                                       </a> 
+                                    </div>
                                  </div>
-                                 <div class="item-list">
-                                    <ul>
-                                       <li>
-                                          Тип: электрический накопительный водонагреватель  
-                                       </li>
-                                       <li>
-                                          Мощность: 1000/2000 Вт  
-                                       </li>
-                                       <li>Емкость: 30 литров </li>
-                                    </ul>
+                              </div>
+                              <div class="item">
+                                 <div class="item-block">
+                                    <div class="item-img">
+                                       <div class="item-img-cell">
+                                          <img src="images/cat-item.jpg" height="148" width="148" alt="" class="big-item-img">
+                                       </div>
+                                    </div>
+                                    <div class="item-link">
+                                       <a href="#">Electrolux EWH 80 Heatronic DL</a>
+                                    </div>
+                                    <div class="item-list">
+                                       <ul>
+                                          <li>
+                                             Тип: электрический накопительный водонагреватель  
+                                          </li>
+                                          <li>
+                                             Мощность: 1000/2000 Вт  
+                                          </li>
+                                          <li>Емкость: 30 литров </li>
+                                       </ul>
+                                    </div>
+                                    <div class="item-price">
+                                       <div class="today-price">8 970 <span>c</span></div>
+                                    </div>
+                                    <div class="var-btn">
+                                       <a class="korz_my" href="#">
+                                            в корзину
+                                       </a>    
+                                       <a class="file_my" href="">
+                                            купить
+                                       </a> 
+                                    </div>
                                  </div>
-                                 <div class="item-price">
-                                    <div class="prev-price"><span>5 850</span> <span>i</span></div>
-                                    <div class="sale-info">-10%</div>
-                                    <div class="today-price">4 970 <span>c</span></div>
+                              </div>
+                              <div class="item">
+                                 <div class="item-block">
+                                    <div class="item-img">
+                                       <div class="item-img-cell">
+                                          <img src="images/cat-item.jpg" height="148" width="148" alt="" class="big-item-img">
+                                       </div>
+                                    </div>
+                                    <div class="item-link">
+                                       <a href="#">Electrolux EWH 80 Heatronic DL</a>
+                                    </div>
+                                    <div class="item-list">
+                                       <ul>
+                                          <li>
+                                             Тип: электрический накопительный водонагреватель  
+                                          </li>
+                                          <li>
+                                             Мощность: 1000/2000 Вт  
+                                          </li>
+                                          <li>Емкость: 30 литров </li>
+                                       </ul>
+                                    </div>
+                                    <div class="item-price">
+                                       <div class="today-price">8 970 <span>c</span></div>
+                                    </div>
+                                    <div class="var-btn">
+                                       <a class="korz_my" href="#">
+                                            в корзину
+                                       </a>    
+                                       <a class="file_my" href="">
+                                            купить
+                                       </a> 
+                                    </div>
                                  </div>
-                                 <div class="item-btn">
-                                    <a href="#" class="korz-btn"></a>
-                                    <a href="#" class="file"></a>
+                              </div>
+                              <div class="item">
+                                 <div class="item-block">
+                                    <div class="item-img">
+                                       <div class="item-img-cell">
+                                          <img src="images/cat-item.jpg" height="148" width="148" alt="" class="big-item-img">
+                                       </div>
+                                    </div>
+                                    <div class="item-link">
+                                       <a href="#">Electrolux EWH 80 Heatronic DL</a>
+                                    </div>
+                                    <div class="item-list">
+                                       <ul>
+                                          <li>
+                                             Тип: электрический накопительный водонагреватель  
+                                          </li>
+                                          <li>
+                                             Мощность: 1000/2000 Вт  
+                                          </li>
+                                          <li>Емкость: 30 литров </li>
+                                       </ul>
+                                    </div>
+                                    <div class="item-price">
+                                       <div class="today-price">8 970 <span>c</span></div>
+                                    </div>
+                                    <div class="var-btn">
+                                       <a class="korz_my" href="#">
+                                            в корзину
+                                       </a>    
+                                       <a class="file_my" href="">
+                                            купить
+                                       </a> 
+                                    </div>
                                  </div>
                               </div>
                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                           <div class="row">
-                              <div class="item-block">
-                                 <div class="item-img">
-                                    <div class="item-img-cell">
-                                       <img src="images/cat-item.jpg" height="148" width="148" alt="" class="big-item-img">
-                                    </div>
-                                 </div>
-                                 <div class="item-link">
-                                    <a href="#">Electrolux EWH 80 Heatronic DL</a>
-                                 </div>
-                                 <div class="item-list">
-                                    <ul>
-                                       <li>
-                                          Тип: электрический накопительный водонагреватель  
-                                       </li>
-                                       <li>
-                                          Мощность: 1000/2000 Вт  
-                                       </li>
-                                       <li>Емкость: 30 литров </li>
-                                    </ul>
-                                 </div>
-                                 <div class="item-price">
-                                    <div class="today-price">8 970 <span>c</span></div>
-                                 </div>
-                                 <div class="item-btn">
-                                    <a href="#" class="korz-btn"></a>
-                                    <a href="#" class="file"></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-sm-4">
-                           <div class="row">
-                              <div class="item-block">
-                                 <div class="item-img">
-                                    <div class="item-img-cell">
-                                       <img src="images/cat-item.jpg" height="148" width="148" alt="" class="big-item-img">
-                                    </div>
-                                 </div>
-                                 <div class="item-link">
-                                    <a href="#">Electrolux EWH 80 Heatronic DL</a>
-                                 </div>
-                                 <div class="item-list">
-                                    <ul>
-                                       <li>
-                                          Тип: электрический накопительный водонагреватель  
-                                       </li>
-                                       <li>
-                                          Мощность: 1000/2000 Вт  
-                                       </li>
-                                       <li>Емкость: 30 литров </li>
-                                    </ul>
-                                 </div>
-                                 <div class="item-price">
-                                    <div class="today-price">8 970 <span>c</span></div>
-                                 </div>
-                                 <div class="item-btn">
-                                    <a href="#" class="korz-btn"></a>
-                                    <a href="#" class="file"></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
                      </div>
                      </div>
                   </div>
@@ -925,6 +1021,38 @@
      pagerCustom: '#bx-pager',
      mode:'fade'
    });
+</script>
+<script src="js/owl.carousel/owl.carousel.min.js"></script>
+<script>
+   
+$(document).ready(function() {
+ 
+  var newCat = $("#catalog-carousel");
+ 
+  newCat.owlCarousel({
+      items : 3,
+      itemsDesktop : [1300,3],
+      itemsTablet: [1030,3],
+      slideSpeed: 500,
+      itemsMobile : [767,1]
+  });
+
+ $("#next-cat").click(function(){
+      newCat.trigger('owl.next');
+    })
+    $("#prev-cat").click(function(){
+      newCat.trigger('owl.prev');
+    })
+ 
+});
+</script>
+<script src="js/lightbox/js/lightbox.js"></script>
+<script>
+   lightbox.option({
+      'resizeDuration': 400,
+      fadeDuration: 400,
+      positionFromTop: 150
+    })
 </script>
 </body>
 </html>

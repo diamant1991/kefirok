@@ -173,14 +173,23 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
-  background-color: #093B73;
- 
+  background-color: #205b9d;
+  text-decoration: none !important;
 
 }
 .my_head_menu aside a span {
   color:#60B345;
   font-weight:400;
-
+}
+   .my_head_menu aside a span.text{
+      color: #fff;
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 600;
+   }
+.my_head_menu aside a.active{
+   background-color: #093b73;
 }
 .my_menu  {
 }
@@ -1883,6 +1892,7 @@ a.sobit {
 .item-block{
    padding-left: 15px;
    padding-right: 15px;
+   border-right: 1px solid #e3e3e3;
 }
 .item-link{
    height: 50px;
@@ -2389,7 +2399,7 @@ ul{
 }
 
 .related{
-   margin-top: 30px;
+   margin-top: 40px;
 }
 
 .related h4{
@@ -2402,6 +2412,7 @@ ul{
 .related .catalog-items{
    border-top: 1px solid #e3e3e3;
    padding-top: 20px;
+   position: relative;
 }
 .stat-prev span:first-child{
    color: #7a7a7a;
@@ -2748,6 +2759,7 @@ ul{
 }
 .side-menu{
    border:4px solid #efefef;
+   margin-top: 20px;
 }
 .side-menu li{
    position: relative;
@@ -4279,14 +4291,9 @@ ul{
 #sync2{
    margin-top: 5px;
 }
-.owl-item-img{
-   height: 415px;
+.owl-item-img img{
    width: 100%;
-   background-repeat: no-repeat;
-   background-position: 50%;
-   background-size: cover;
-   -webkit-border-radius: 5px;
-   border-radius: 5px;
+   height: auto;
 }
 .owl-item-cell header{
    text-transform: uppercase;
@@ -4624,6 +4631,105 @@ ul{
 .phone_header{
    margin-bottom: 0;
 }
+.telephone-sm{
+   display: inline-block;
+   font-size: 22px;
+   color: #195393;
+   font-weight: 500;
+   position: relative;
+   top: 5px;
+}
+
+.sm-block{
+   padding-bottom: 15px;
+}
+.sm-get-call{
+   display: inline-block;
+   height: 25px;
+   line-height: 22px;
+   padding-left: 15px;
+   padding-right: 15px;
+   color: #fff;
+   font-size: 13px;
+   color: #fff !important;
+   text-decoration: none !important;
+   margin-left: 25px;
+   background: #199b42;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   -webkit-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+   .sm-get-call span{
+      border-bottom: 1px dashed #fff;
+   }
+   .sm-get-call:hover{
+      background: #1263bb;
+   }
+   .sm-get-call:hover span{
+      border-top-color: transparent;
+   }
+.dropdown-menu-active{
+   display: block;
+   position: relative;
+   width: 100%;
+   background-color: #f8f8f8;
+   border:0;
+   border-radius: 0;
+   box-shadow: none;
+   border-left: 2px solid #199b42;
+   margin-top: 0;
+   padding-top: 0;
+   padding-bottom: 0;
+   float: none;
+}
+.categori_my > .dropdown-active:hover a{
+   color: #0f427b
+}
+
+.categori_my .dropdown-active > a{
+   border-bottom: 0;
+}
+.dropdown-menu-active li.active-cat{
+   background-color: #199b42;
+}
+   .dropdown-menu-active li.active-cat a{
+      color: #fff !important;
+      text-decoration: none !important;
+   }
+   .dropdown-menu-active li:hover a{
+      color: #fff !important;
+      text-decoration: none !important;
+   }
+   .dropdown-menu-active li:hover{
+      background-color: #199b42;
+   }
+.categori_my li.dropdown.dropdown-active{
+   background-color: #195393;
+}
+   .categori_my li.dropdown.dropdown-active > a{
+      color: #fff;
+   }
+   .dropdown-menu-active li{
+      background-color: transparent;
+      padding-left: 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+   }
+      .dropdown-menu-active li a{
+         border-bottom:0;
+         color: #0f427b;
+         font-size: 13px;
+         display: inline-block;
+         padding: 0;
+         text-decoration: underline;
+      }
+
+
+
+
 
 
 
@@ -4633,9 +4739,7 @@ ul{
   }
 }
 @media(max-width: 1199px){
-   .owl-item-img{
-      height: 300px;
-   }
+
    .owl-item-cell header{
       font-size: 42px;
    }
@@ -4679,7 +4783,15 @@ ul{
     font-size: 15px;
   }
 }
-
+@media(min-width: 1024px){
+   .hover_menu > li:hover > ul{
+      display: block;
+   }
+   .hover_menu > li:hover > a{
+      background-color: #093B73;
+   }
+       
+}
 @media(max-width: 1023px){
    .forgot-form p{
       position: relative;
@@ -4747,14 +4859,18 @@ ul{
 }
 
 @media(max-width: 767px){
+   .item-block{
+      border-right: 0;
+      text-align: center;
+   }
+   .logo.xs_center{
+      margin-bottom: 30px;
+   }
    .enter-container{
       margin-top: 0;
    }
    .gallery-big{
       margin-bottom: 30px;
-   }
-   .owl-item-img{
-      height: 190px;
    }
    .owl-item-cell header{
       font-size: 27px;

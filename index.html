@@ -33,7 +33,7 @@
                    <div class="row"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu">
                         <span class="my_menu_btn">Меню</span>
                       </button> 
-                      <ul class="collapse navbar-collapse col-lg-7 col-md-8 col-sm-7 col-xs-12 my_menu nav nav-pills" id="collapse-menu">
+                      <ul class="collapse navbar-collapse col-lg-7 col-md-8 col-sm-7 col-xs-12 my_menu nav  nav-pills" id="collapse-menu">
                         <li class="dropdown">
                           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             Покупателям <span class="caret"></span>
@@ -102,7 +102,13 @@
                 <div class="col-lg-7 col-md-6 col-sm-8 col-xs-10 col-xs-offset-1 col-lg-offset-0 col-md-offset-0 col-sm-offset-0">
                   <div class="row ">
                      <div class="header-search">
-                        <div class="title">Все инновации для Вас.</div>
+                        <div class="title hidden-sm hidden-xs">Все инновации для Вас.</div>
+                        <div class="sm-block visible-sm">
+                           <div class="telephone-sm">+7 423 246-42-34</div>
+                           <a href="#" class="sm-get-call">
+                              <span>обратный звонок</span>
+                           </a>
+                        </div>
                         <form>
                            <fieldset class="search-area">
                               <input type="text" placeholder="Поиск" class="header_search_input">
@@ -143,9 +149,9 @@
             <div class="row">
               <aside class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <div class="row">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="col-lg-12 col-md-12 col-sm-12  col-xs-12">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="col-lg-12 col-md-12 col-sm-12  col-xs-12 active">
                     <span class="glyphicon glyphicon-align-justify"></span>
-                    КАТАЛОГ ТОВАРОВ
+                    <span class="text">каталог товаров</span>
                   </a>
                 </div>
               </aside>
@@ -161,7 +167,7 @@
 
 
 
-                     <ul class="collapse navbar-collapse col-lg-7 col-md-8 col-sm-8 my_menu nav nav-pills">
+                     <ul class="collapse navbar-collapse col-lg-7 col-md-8 col-sm-8 my_menu nav nav-pills hover_menu">
                       <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                           Покупателям <span class="caret"></span>
@@ -510,24 +516,18 @@
                
                   <div id="sync1" class="owl-carousel owl-theme">
                      <div class="item">
-                        <div class="owl-item-img" style="background-image: url(images/slide_big.png)">
-                           <div class="owl-item-table">
-                              <div class="owl-item-cell">
-                                 <header>трубопроводная арматура</header>
-                                 <div class="text">широкий <br>выбор в <br>ассортименте</div>
-                                 <a href="#" class="go-catalog">перейти в в каталог</a>
-                              </div>
-                           </div>
+                        <div class="owl-item-img">
+                           <a href="#"><img src="images/main-slide.jpg" height="416" width="940" alt=""></a>
                         </div>
                      </div>
                      <div class="item">
-                        <div class="owl-item-img" style="background-image: url(images/slide_big.png)">
-                           
+                        <div class="owl-item-img">
+                           <a href="#"><img src="images/main-slide.jpg" height="416" width="940" alt=""></a>
                         </div>
                      </div>
                      <div class="item">
-                        <div class="owl-item-img" style="background-image: url(images/slide_big.png)">
-                           
+                        <div class="owl-item-img">
+                           <a href="#"><img src="images/main-slide.jpg" height="416" width="940" alt=""></a>
                         </div>
                      </div>
                   </div>
@@ -616,8 +616,8 @@
              <div class="tab-content tab-content_my">
                <div class="tab-pane active clearfix" id="new">
                   <div class="car-trigger">
-                     <a class="car-prev" id="prev-news"></a>
-                     <a class="car-next" id="next-news"></a>
+                     <a class="car-prev" id="prev"></a>
+                     <a class="car-next" id="next"></a>
                   </div>
                   <div id="new-carousel" class="owl-carousel owl-theme ">
                      <div class="item">
