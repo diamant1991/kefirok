@@ -164,3 +164,25 @@ $(document).ready(function() {
     })
  
 });
+
+$(document).ready(function() {
+ 
+  var newAction = $("#action-carousel");
+ 
+  newAction.owlCarousel({
+      items : 5,
+      itemsDesktop : [1300,5],
+      itemsDesktopSmall : [1200,4],
+      itemsTablet: [1030,3],
+      slideSpeed: 500,
+      itemsMobile : [767,1]
+  });
+
+   $("#next-action").click(function(){
+      newAction.trigger('owl.next');
+    })
+    $("#prev-action").click(function(){
+      newAction.trigger('owl.prev');
+    })
+ 
+});
