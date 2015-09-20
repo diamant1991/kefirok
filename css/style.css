@@ -3805,6 +3805,12 @@ ul{
       text-align: center;
    }
 
+
+.form-search .search_my{
+   color: #fff;
+}
+
+
 .delete a{
    color: #195393 !important;
    font-size: 13px;
