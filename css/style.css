@@ -4367,7 +4367,7 @@ ul{
    padding-bottom: 15px;
 }
 
-#new{
+.tab-pane .owl-carousel{
    border-bottom: 1px solid #e3e3e3;
 }
 .all-events-link{
