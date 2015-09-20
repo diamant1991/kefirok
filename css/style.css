@@ -4798,6 +4798,10 @@ ul{
    .hover_menu > li:hover > a{
       background-color: #093B73;
    }
+   .reg-visible,
+   .enter-visible{
+      display: block !important;
+   }
        
 }
 @media(max-width: 1023px){
