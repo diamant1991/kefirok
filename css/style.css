@@ -5023,6 +5023,14 @@ ul{
 }
 
 @media(max-width: 480px){
+   .all-events-link{
+      position: absolute;
+      top: 3px;
+   }
+   .news-slides .car-trigger{
+      position: absolute;
+      top: 2px;
+   }
   .form-search_bot .btn_search_my{
     font-size: 14px;
     padding: 0;
