@@ -3558,6 +3558,9 @@ input[type="button"].btn-block {
 .fade.in {
   opacity: 1;
 }
+.complete-modal.in{
+  display: block;
+}
 .collapse {
   display: none;
 }
