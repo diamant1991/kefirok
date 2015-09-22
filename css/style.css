@@ -1796,9 +1796,12 @@ a.sobit {
    padding: 5px 10px;
 }
    .op-link.active{
-      background: #eef2f6 url(../images/filter-arrow.png)no-repeat 92%;
+      background: #eef2f6;
       text-decoration: none;
-      color: #3f3f3f;
+      color: #3f3f3f; 
+   }
+   .option-sort .op-link.active{
+      background: #eef2f6 url(../images/filter-arrow.png)no-repeat 92%;
       padding-right: 20px;
    }
 
