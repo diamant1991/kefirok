@@ -1796,10 +1796,10 @@ a.sobit {
    padding: 5px 10px;
 }
    .op-link.active{
-      background: #eef2f6;
+      background: #eef2f6 url(../images/filter-arrow.png)no-repeat 92%;
       text-decoration: none;
       color: #3f3f3f;
-
+      padding-right: 20px;
    }
 
 .korz-btn{
