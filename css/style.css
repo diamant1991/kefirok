@@ -653,8 +653,12 @@ ul.dropdown-menu_aside li a {
     padding-bottom: 7px;
 }
 .korz_my {
-
+   cursor:pointer;
 }
+   .korz_my.active{
+      cursor: default;
+      background: #199b42 url(../images/korzina-active.png)no-repeat 14px;
+   }
 .file_my {
   margin-left: 1px;
 
@@ -4510,6 +4514,10 @@ ul{
     width: 120px;
     background: #195393 url(../images/korzina-active.png)no-repeat 14px;
   }
+  .korz_my.active:hover{
+      width: 45px;
+      background: #199b42 url(../images/korzina-active.png)no-repeat 14px;
+  }
 
 .file_my{
   display: inline-block;
@@ -4756,9 +4764,39 @@ ul{
          text-decoration: underline;
       }
 
+.ok-icon{
+   position: absolute;
+   z-index: 10;
+   top: 50%;
+   left: 50%;
+   margin-top: -24.5px;
+   margin-left: -25px;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: opacity 0.5s ease-in-out;
+   -o-transition: opacity 0.5s ease-in-out;
+   transition: opacity 0.5s ease-in-out;
+}
+   .ok-icon.active{
+      opacity: 1;
+      visibility: visible;
+      animation: scale 0.4s linear 0.2s 2 alternate;
+   }
 
-
-
+@keyframes scale{
+   from{
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+   }
+   to{
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      transform: scale(1.3);
+   }
+}
 
 
 
@@ -4812,6 +4850,9 @@ ul{
     font-size: 15px;
   }
 }
+
+
+
 @media(min-width: 1024px){
    .hover_menu > li:hover > ul{
       display: block;
@@ -4826,6 +4867,10 @@ ul{
        
 }
 @media(max-width: 1023px){
+  #collapseOne{
+    position: absolute;
+    z-index: 1000;
+  }
    .forgot-form p{
       position: relative;
       left: 0;

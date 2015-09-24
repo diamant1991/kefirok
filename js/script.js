@@ -54,3 +54,7 @@ $(document).mouseup(function (e) {
         $('.slct-cat').removeClass('active');
     }
 });
+
+jQuery(function($){
+   $(".tel").mask("+7 (999) 999-9999");
+});
